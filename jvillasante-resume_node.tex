@@ -1,0 +1,254 @@
+% LaTeX source of my resume
+% =========================
+
+% Commented for easy reuse... ;)
+
+% See the `README.md` file for more info.
+
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% For spanish accents and the like
+\usepackage[utf8]{inputenc}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Julio C. Villasante G\'omez}{May 24, 1980}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:jvillasantegomez.at.gmail.dot.com}{jvillasantegomez\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{+}1-786-282-1636\sbull
+\href{https://github.com/jvillasante}{github.com/jvillasante}\sbull
+\href{http://linkedin.com/in/jvillasante}{linkedin.com/in/jvillasante}
+\\
+8405 Northwest 8{\large \sc th} Street {\large \sc Apt.}\thinspace 406\sbull
+Miami,\thinspace FL\sbull
+{\large \sc 33126}\sbull
+USA
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent \emph{Savvy Software Developer with 7+ years in technical software development. Expert in a variety of platforms, languages and embedded systems.}
+\\
+\\
+An excellent problem solver, able to quickly grasp complex systems and identify opportunities for improvements and resolution of critical issues.
+
+Have interest in designing and crafting efficient modern software, and learning new technologies and tools if need arises.
+\end{multicols}
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection {\textsc{Node.js}} {
+    \begin{itemize}
+      \item express.js
+      \item Persistence with mongodb (mongoskin, mongoose), redis, and
+        relational databases (MySQL, PostgreSQL)
+      \item passport.js to authorize and authenticate users in Node.js apps
+      \item async, lodash, crypto, http, ArrayBuffers, Streams, stdio, child
+        processes, etc \ldots
+      \item TDD and BDD for Node.js with Mocha
+      \item Modular design and development
+      \item Template engines (jade and handlebars)
+      \item Real-Time apps with WebSocket, Socket.io
+      \item Deploying and production maintenance of Node.js apps
+    \end{itemize}
+}
+
+\headedsection {\textsc{Frontend}} {
+    \begin{itemize}
+      \item Javascript, jQuery
+      \item Angular.js
+      \item React.js / Flux
+      \item HTML5, CSS3, LESS
+      \item Twitter Bootstrap, UX/UI Design
+    \end{itemize}
+}
+
+\headedsection {\textsc{Server}} {
+    \begin{itemize}
+      \item Linux (Debian and Ubuntu), SSH shell, Load Balancing
+      \item Apache, nginx, SSL certificates
+      \item Git repositories
+      \item Server deployment (AWS, pm2)
+      \item Mongodb, redis, MySQL, PostgreSQL
+      \item Shell scripting
+    \end{itemize}
+}
+
+\headedsection {\textsc{Software}} {
+    \begin{itemize}
+      \item Emacs, Vim
+      \item Visual Studio, QtCreator, eclipse
+      \item C/C++, gcc, make
+    \end{itemize}
+}
+
+\roottitle{Employment History}
+
+\headedsection
+  {\href{http://innobis.cl}{Innobis}}
+  {\textsc{Santiago, Chile}} {%
+  \headedsubsection
+    {Lead Developer}
+    {Jan \apo15 -- June \apo15}
+    {\bodytext{
+      Innobis is an open source minded ``full-service'' internet company based
+      in Santiago, Chile which fuels innovation from conception to deployment of
+      software solutions.
+      \\
+      \\
+      {Responsibilities:}
+      \begin{itemize}
+        \item Plan and Manage team goals in implementing new technologies and features
+        \item RESTful API development and documentation
+        \item Single page application design and development using React.js and Flux
+        \item Analytical and geolocation tracking on click traffic, and real
+          time graphical presentation
+        \item High traffic load balancing and distribution
+        \item Got everyone to look beyond PHP to other open source solucions
+          such as Node.js
+        \item Helped to set up customer support
+        \item On call support for all problems that may arise
+        \item Contributed to the sales pitches and in charge of the software
+          architecture off all technically challenging projects.
+      \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{http://www.genera.cl}{Genera S.A.}}
+  {\textsc{Santiago, Chile}} {%
+  \headedsubsection
+    {Lead Developer \& Researcher}
+    {Jan \apo14 -- Jan \apo15}
+    {\bodytext{
+      Genera S. A. is a Human Resources Management company which uses advanced
+      technology to better manage the human factor on their clients.
+      \\
+      \\
+      {Responsibilities:}
+      \begin{itemize}
+        \item C/C++ and QT development and maintenance
+        \item Research and development of biometric (fingerprint identification)
+          solutions
+        \item RESTful API conception and development on servers for the
+          different biometric clients
+        \item Fingerprint image manipulation and processing
+        \item Linux development and installation/configuration on ARM boards
+        \item Worked closely with sensors and other kinds of hardware on our
+          embedded systems
+        \item On call support for all problems that may arise
+      \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{http://www.datys.cu}{Datys}}
+  {\textsc{Havana, Cuba}} {%
+  \headedsubsection
+    {Lead Developer}
+    {\apo09 -- Jan \apo14}
+    {\bodytext{
+      Datys is a Cuban company which has made great strides on the last few
+      years both on Cuba as in Latin America.
+      \\
+      \\
+      {Responsibilities:}
+      \begin{itemize}
+        \item Conception and development of software solutions af all kinds
+        \item PHP and Javascript development of different web clients
+        \item RESTful API interface to open the backend domain to the different
+          clients
+        \item Embedded system programming for POS software
+        \item Lots of SQL (Oracle) development and maintenance
+        \item Integration, monitoring and maintenance of different modules and applications
+      \end{itemize}
+    }}
+}
+
+\vspace{-0.2em}
+\begin{center}
+  \emph{\small Please refer to \href{http://www.linkedin.com/in/jvillasante}{my LinkedIn profile} for a more complete list of work experiences along with recommendations.}
+\end{center}
+
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://cujae.edu.cu}{Instituto Superior Polit\'ecnico Jos\'e Antonio Echeverr\'ia} \textnormal{~(\acr{CUJAE})}}
+  {\textsc{Havana, Cuba}} {%
+  \headedsubsection
+    {Bachelor degree in Computer Science \textnormal{~(\acr{CS})}}
+    {2003 -- 2008}
+    {\bodytext{Main courses in Programming Languages, Algorithms, Data
+        Structures, Software Design, Software Architecture, Systems Engineering,
+        C/C++, Web Technologies. Picked up quite some PHP and Java skills along
+        the way.}}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical expertise:}
+  {Big fan of Agile methodologies and continuous delivery and functional
+    programming. Enjoys writing C/\nsp \CPP/\nsp Go/\nsp PHP/\nsp Java~and
+    JavaSript. Solid knowledge of SQL and relational databases (PostgreSQL,
+    MySQL, Oracle, SQLite). Solid knowledge of web technologies. Able to
+    architect and implement distributed systems. Strong Linux administration
+    skills (e.g.\ Bash scripting). Strong Embedded systems development and
+    integration skills. Complex problem solver skills. Strong decision maker.
+    Excellent communicator. Independent, organized, punctual, positive attitude,
+    team player, fast learner. Git, Emacs and \acr{VIM} user.}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Natural languages:}
+  {Spanish \emph{(mother tongue)}, English \emph{(full professional proficiency)}.}
+
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {Non-exhaustive and in no apparent order:}
+  {Internet of Things (IoT), Mobile Development, Cloud Computing, Big Data,
+    Functional Programming, Concurrency, Algorithms, Coding, Readable Code,
+    Problem Solving, Linux/Unix Kernel, Embedded Development, New Technologies,
+    Frameworks and Libraries, Web Development, Software Architecture, NoSQL,
+    TDD, Design Patterns, Software Design, Cryptography, Open Source, Startups.}
+
+\end{document}

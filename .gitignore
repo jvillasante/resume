@@ -22,5 +22,6 @@
 *.out
 *.synctex.gz
 *.bak
+.DS_Store
 build/
 auto/

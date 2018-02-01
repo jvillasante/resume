@@ -15,11 +15,19 @@ think look very nice.
 Except the horizonal lines and bullets everything is made of text.
 Hyper-refs are used where applicable, all in dark blue so 'print safe'.
 
-A 'last updated at' date is printed on the top-right of the page.
+A 'last updated at** date is printed on the top-right of the page.
 
 Obviously it only relies on open source stuff.
 
 ## Generating the PDF
+### Linux
+```
+  $ sudo apt-get install texlive-full
+  $ pdflatex jvillasante-resume.tex
+```
 
-$ sudo apt-get install texlive-full
-$ pdflatex jvillasante-resume.tex
+### OSX
+```
+  $ brew cask install mactex
+  $ pdflatex jvillasante-resume.tex
+```

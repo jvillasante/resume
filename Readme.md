@@ -28,6 +28,6 @@ Obviously it only relies on open source stuff.
 
 ### OSX
 ```
-  $ brew cask install mactex
+  $ brew install mactex --cask
   $ pdflatex jvillasante-resume.tex
 ```

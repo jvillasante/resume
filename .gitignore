@@ -23,5 +23,6 @@
 *.synctex.gz
 *.bak
 .DS_Store
+.auctex-*
 build/
 auto/

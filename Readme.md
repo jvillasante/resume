@@ -4,7 +4,7 @@ Linkedin serves well, but not in all situations. At some point my profile
 just cluttered up, while all I wanted 'them' to have is a good looking
 two page resume. Naturally turned to Latex.
 
-Looking at some Latex resumes online I found non that I really liked, so
+Looking at some Latex resumes online I found one that I really liked, so
 I gave it my best shot. The I documented my effort here on Github as I
 expect more geeks want their resume to be typeset like this.
 
@@ -24,11 +24,14 @@ Obviously it only relies on open source stuff.
 ### Linux
 
 ```
-  # Ubuntu
+  # Debian
   $ sudo apt-get install texlive-full
 
   # Fedora
   sudo dnf install -y texlive-scheme-full
+
+  # openSUSE
+  sudo zypper install -y texlive-scheme-basic
 
   # Generate resume on pdf format
   $ pdflatex jvillasante-resume.tex
